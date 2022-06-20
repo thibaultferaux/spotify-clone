@@ -3,7 +3,7 @@ import { LinkBox, LinkOverlay, ListItem } from "@chakra-ui/layout";
 
 const PlaylistMenuItem = ({ item }) => {
     return (
-        <ListItem key={item}>
+        <ListItem>
             <LinkBox
                 _hover={{ color: "white" }}
                 transition="color 50ms ease-in"
