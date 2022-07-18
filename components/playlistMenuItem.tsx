@@ -8,8 +8,14 @@ const PlaylistMenuItem = ({ item }) => {
                 _hover={{ color: "white" }}
                 transition="color 50ms ease-in"
             >
-                <NextLink href="/" passHref>
-                    <LinkOverlay>{item}</LinkOverlay>
+                <NextLink
+                    href={{
+                        pathname: "/playlist/[id]",
+                        query: { id: item.id },
+                    }}
+                    passHref
+                >
+                    <LinkOverlay>{item.name}</LinkOverlay>
                 </NextLink>
             </LinkBox>
         </ListItem>
