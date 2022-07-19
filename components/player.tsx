@@ -123,7 +123,7 @@ const Player = ({ songs, activeSong }) => {
                     ref={soundRef}
                     onLoad={onLoad}
                     onEnd={onEnd}
-                    volume="0.1"
+                    // volume="0.1"
                 />
             </Box>
             <Center color="gray.600">
