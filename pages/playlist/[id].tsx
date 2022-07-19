@@ -29,6 +29,7 @@ const Playlist = ({ playlist }) => {
             subtitle="playlist"
             description={`${playlist.songs.length} songs`}
             image={`https://picsum.photos/400?random=${playlist.id}`}
+            roundImage={false}
         >
             <SongTable songs={playlist.songs} />
         </GradientLayout>
@@ -36,11 +37,18 @@ const Playlist = ({ playlist }) => {
 };
 
 export const getServerSideProps = async ({ query, req }) => {
-    const { id } = validateToken(req.cookies.TRAX_ACCESS_TOKEN);
+    let user;
+    try {
+        user = validateToken(req.cookies.TRAX_ACCESS_TOKEN);
+    } catch (e) {
+        return {
+            path: "/signup",
+        };
+    }
     const playlist = await prisma.playlist.findFirst({
         where: {
             id: +query.id,
-            userId: id,
+            userId: user.id,
         },
         include: {
             songs: {
