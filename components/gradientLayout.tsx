@@ -12,9 +12,11 @@ const GradientLayout = ({
     loading = false,
 }) => {
     return (
-        <Box
+        <Flex
             height="100%"
             overflowY="auto"
+            bgColor={`${color}.900`}
+            direction="column"
             css={{
                 "&::-webkit-scrollbar": {
                     width: "13px",
@@ -31,7 +33,13 @@ const GradientLayout = ({
                 },
             }}
         >
-            <Flex padding="40px" align="end" position="relative">
+            <Flex
+                padding="25px"
+                paddingTop="50px"
+                align="end"
+                position="relative"
+                zIndex="1"
+            >
                 <Box
                     position="absolute"
                     top="0"
@@ -42,16 +50,16 @@ const GradientLayout = ({
                     bgImage="linear-gradient(transparent 0, rgba(0, 0, 0, .5) 100%)"
                     zIndex="-1"
                 />
-                <Box padding="20px">
+                <Box paddingRight="20px">
                     <Image
                         boxSize="200px"
                         boxShadow="2xl"
                         objectFit="cover"
                         src={image}
-                        borderRadius={roundImage ? "100%" : "3px"}
+                        borderRadius={roundImage ? "100%" : "0"}
                     />
                 </Box>
-                <Box padding="20px" lineHeight="40px" color="white">
+                <Box paddingX="20px" lineHeight="40px" color="white">
                     <Text fontSize="xs" fontWeight="bold" casing="uppercase">
                         {subtitle}
                     </Text>
@@ -72,10 +80,10 @@ const GradientLayout = ({
                 </Box>
             </Flex>
             <Box
-                paddingY="50px"
                 position="relative"
-                bg="rgba(0,0,0,.95)"
+                bg="rgb(15,15,15)"
                 isolation="isolate"
+                height="100%"
             >
                 <Box
                     position="absolute"
@@ -84,12 +92,12 @@ const GradientLayout = ({
                     right="0"
                     height="200px"
                     bgColor={`${color}.500`}
-                    bgImage="linear-gradient(rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, .95) 100%)"
+                    bgImage="linear-gradient(rgba(0, 0, 0, .6) 0, rgb(15,15,15) 100%)"
                     zIndex="-1"
                 />
                 {children}
             </Box>
-        </Box>
+        </Flex>
     );
 };
 

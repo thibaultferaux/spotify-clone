@@ -17,7 +17,7 @@ const Home = ({ artists }) => {
             roundImage
             loading={isLoading}
         >
-            <Box color="white" paddingX="40px">
+            <Box color="white" padding="25px" marginBottom="20px">
                 <Box marginBottom="40px">
                     <Text fontSize="2xl" fontWeight="bold">
                         Top artists this month
