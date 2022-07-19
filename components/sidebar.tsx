@@ -98,14 +98,14 @@ const Sidebar = () => {
                             width: "13px",
                         },
                         "&::-webkit-scrollbar-thumb": {
-                            background: "#424242",
+                            background: "rgba(255, 255, 255, 0.3)",
                             transition: "background-color 100ms ease-in",
                         },
                         "&::-webkit-scrollbar-thumb:hover": {
-                            background: "#757575",
+                            background: "rgba(255, 255, 255, 0.5)",
                         },
                         "&::-webkit-scrollbar-thumb:active": {
-                            background: "#BDBDBD",
+                            background: "rgba(255, 255, 255, 0.7)",
                         },
                     }}
                 >

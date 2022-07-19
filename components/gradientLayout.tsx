@@ -16,6 +16,21 @@ const GradientLayout = ({
             height="100%"
             overflowY="auto"
             bgGradient={`linear(${color}.500 0%, ${color}.600 15%, ${color}.700 40%, rgba(0,0,0,0.95) 75%)`}
+            css={{
+                "&::-webkit-scrollbar": {
+                    width: "13px",
+                },
+                "&::-webkit-scrollbar-thumb": {
+                    background: "rgba(255, 255, 255, 0.3)",
+                    transition: "background-color 100ms ease-in",
+                },
+                "&::-webkit-scrollbar-thumb:hover": {
+                    background: "rgba(255, 255, 255, 0.5)",
+                },
+                "&::-webkit-scrollbar-thumb:active": {
+                    background: "rgba(255, 255, 255, 0.7)",
+                },
+            }}
         >
             <Flex bgColor={`${color}.600`} padding="40px" align="end">
                 <Box padding="20px">
