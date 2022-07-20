@@ -2,11 +2,12 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Built With](#built-with)
-- [Features](#features)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+-   [Overview](#overview)
+-   [Built With](#built-with)
+-   [Deployment](#deployment)
+-   [Features](#features)
+-   [Contact](#contact)
+-   [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -16,35 +17,33 @@ I made some projects in [React](https://reactjs.org/) before but never with [Nex
 
 ![Playlist screenshot](./assets/screenshot-playlist.jpg?raw=true "Playlist screenshot")
 
-
 ### Built With
 
-* [React](https://reactjs.org/)
-* [Next.js](https://nextjs.org/)
-* [Prisma](https://www.prisma.io/)
-* [Chakra UI](https://chakra-ui.com/)
+-   [React](https://reactjs.org/)
+-   [Next.js](https://nextjs.org/)
+-   [Prisma](https://www.prisma.io/)
+-   [Chakra UI](https://chakra-ui.com/)
 
 ## Deployment
 
 Only the following user has playlists at te moment:
-* email: *user@test.com*
-* password: *password*
+
+-   email: *user@test.com*
+-   password: _password_
 
 URL: https://spotify-clone-thibaultferaux.vercel.app/
 
-
 ## Current Features
 
-* Basic Authentication
-* Playlists
-* Music playing (skip, shuffle, repeat, seek)
+-   Basic Authentication
+-   Playlists
+-   Music playing (skip, shuffle, repeat, seek)
 
 ## Contact
 
-* LinkedIn: [Thibault Feraux](https://www.linkedin.com/in/thibaultferaux/)
-* Github: [thibaultferaux](https://github.com/thibaultferaux)
+-   LinkedIn: [Thibault Feraux](https://www.linkedin.com/in/thibaultferaux/)
+-   Github: [thibaultferaux](https://github.com/thibaultferaux)
 
 ## Acknowledgements
 
-I used the *Build a Fullstack App from Scratch (feat Next.js)* course from [Frontend Masters](https://frontendmasters.com/)
-
+I used the _Build a Fullstack App from Scratch (feat Next.js)_ course from [Frontend Masters](https://frontendmasters.com/)
